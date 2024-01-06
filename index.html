@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="./assets/mail.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact form</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-title">
-                <h2>Get in touch</h2>
-                <hr>
-            </div>
-            <input type="hidden" name="access_key" value="2beaec4f-6079-4e9c-a61d-3aee2954d716">
-            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-            <button type="submit">Submit <img src="./assets/arrow_icon.png" alt="img"></button>
-        </form>
-        <div class="contact-right">
-            <img src="./assets/image.png" alt="img">
-        </div>
+        <h1>OTP Generator</h1>
+        <button id="generateBtn">Generate OTP</button>
+        <p id="otpDisplay"></p>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
